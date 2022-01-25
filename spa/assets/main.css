@@ -1,0 +1,234 @@
+/*
+
+STYLES GUIDE:
+
+0. RESET
+1. LAYOUT
+2. GENERIC ITEMS
+3. PARTS OF WEB
+4. LIST 
+5. FORM
+6. ANIMATIONS
+
+*/
+
+/*
+---- Paleta de colores: ----
+
+  CLEAN (azul claro) : #A7D2CB
+  BUTTER (amarillo) : #F2D388
+  SALMON (rojo rosa naranja) : #C98474
+  EGGPLANT (berenjena morado rosa) : #874C62
+
+*/
+
+/* ---------- 0. RESET ---------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ---------- 1. LAYOUT ---------- */
+body {
+  text-align: center;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tarifas {
+  text-align: left;
+}
+.list-tratamientos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-tratamientos figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+/* ---------- 2. GENERIC ITEMS ---------- */
+
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap');
+    /* font-family: 'Lora', serif; */
+
+    .header {
+      width: 100%;
+      height: 450px;
+      background-image: url("https://image.freepik.com/foto-gratis/mujer-disfrutando-masaje-piedras_1098-3182.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .logo-spa {
+      height: 80px;
+      width: 100%;
+    }
+    .navbar {
+      height: 60px;
+      background: #C98474;
+    }
+    .navbar a {
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 0 20px;
+      font-size: 20px;
+      font-family: 'Lora', serif;
+    }
+    .title {
+      font-size: 60px;
+      font-family: 'Lora', serif;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    p {
+      margin-bottom: 40px;
+    }
+    .icon-3 {
+      width: 70px;
+      height: 70px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 40px;
+      border: 2px solid  #fff;
+      color:  rgb(122, 98, 98);
+      text-decoration: none;
+    }
+/* ---------- 3. PARTS OF WEB ---------- */
+.content {
+  padding: 80px 0;
+}      
+
+.who {
+        background: #F2D388;
+        color: black;
+      }
+      .who p {
+        max-width: 1055px;
+        margin: 0 auto;
+      }
+
+    .tratamientos {
+      background: #C98474;
+      color: black;
+    }
+
+    .tarifas {
+      background: url(https://image.freepik.com/foto-gratis/mujer-descansando-salon-belleza-spa-flores-espacio-color_186202-3369.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 450px;
+      color: rgb(122, 98, 98);
+    }
+    .contain {
+      max-width: 1055px;
+      margin: 0 auto;
+    }
+      .tarifas p {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .tarifas h2 {
+        max-width: 1055px;
+        margin: 0 auto;
+      }
+    .localizacion {
+      padding-bottom: 0;
+    }
+      .localizacion .map iframe {
+        max-width: 100%;
+        width: 100%;
+        background: #874C62;
+      }
+
+/* ---------- 4. LIST ----------  */
+    .list-tratamientos figure {
+      position: relative;
+      height: 100px;
+      width: 100px;
+    }
+
+    .list-tratamientos figure:after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0;
+      background: #fff; 
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+    .list-tratamientos img {
+      z-index: 1;
+    }
+    .list-tratamientos li {
+      padding: 0 30px;
+    }
+    .list-tratamientos figcaption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -40px;
+    }
+
+/* ---------- 5. FORM ---------- */
+/* ---------- 6. ANIMATIONS ---------- */
